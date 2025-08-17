@@ -1,23 +1,23 @@
-_constructor = '''A constructor is a special method in a class that is automatically called when an object is created. 
-In Python, the constructor is called __init__().
-The first parameter of a class method (like the constructor __init__) is always self. 
+_constructor = '''A initializer is a special method in a class that is automatically called when an object is created. 
+In Python, the initializer is called __init__().
+The first parameter of a class method (like the initializer __init__) is always self. 
 This parameter represents the instance of the class that is being created or modified.
 
 Purpose of self:
 It allows you to access and modify the object's attributes and methods.
  • When a method is called on an object, self refers to the specific object that the method is being invoked on.
-Purpose of the Constructor:
+Purpose of the initializer:
  • It initializes the object’s (self) attributes with default or provided values when the object is created.
  • It's typically used to set up or initialize the state of the object.'''
 
 ### Example ###
 
 class Car:
-    def __init__(self, brand, model): # Constructor's calling
+    def __init__(self, brand, model): # Initializer's calling
         self.brand = brand  # Initializing self (object) attribute
         self.model = model  # Initializing self (object) attribute
 
-# Creating an object (constructor is called automatically)
+# Creating an object (initializer is called automatically)
 my_car = Car("Toyota", "Corolla")
 
 # Accessing object attributes
