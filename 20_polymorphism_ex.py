@@ -46,7 +46,6 @@ def show_info(var):
     return var.add(5, 7, 8)
 print(show_info(Calculator()))
 
-#
 
 
 

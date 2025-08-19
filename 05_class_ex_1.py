@@ -297,7 +297,6 @@ class Employee:
 obj = Employee("Areg", 300000, 10)
 obj.display_info()
 
-# Task:
 # Create a Book class with:
 #
 # Attributes: title, author, and pages.
@@ -350,7 +349,6 @@ obj = Car('Subaru', 70)
 obj.accelerate(40)
 obj.display_speed()
 
-# Task:
 # Create a ShoppingCart class with:
 #
 # Attribute: items (default empty list).

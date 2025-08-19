@@ -5,17 +5,17 @@
 # Design a class-based system that simulates an online learning platform where instructors can create courses, and students can enroll and complete them.
 #
 # Structure:
-# 	•	CoursePlatform class manages users, courses, and enrollments.
-# 	•	Store:
-# 	•	users: {user_id: {"name": ..., "role": "student"/"instructor"}}
-# 	•	courses: {course_id: {"title": ..., "instructor_id": ..., "students": set()}}
+#  • CoursePlatform class manages users, courses, and enrollments.
+#  • Store:
+#  • users: {user_id: {"name": ..., "role": "student"/"instructor"}}
+#  • courses: {course_id: {"title": ..., "instructor_id": ..., "students": set()}}
 #
 # Methods to implement:
-# 	•	add_user(name, role): Adds a user with auto-generated ID.
-# 	•	create_course(title, instructor_id): Creates a course.
-# 	•	enroll_student(course_id, student_id): Enrolls a student.
-# 	•	get_course_info(course_id): Shows course, instructor, and enrolled students.
-# 	•	get_user_courses(user_id): Lists courses the user is enrolled in or teaches.
+#  • add_user(name, role): Adds a user with auto-generated ID.
+#  • create_course(title, instructor_id): Creates a course.
+#  • enroll_student(course_id, student_id): Enrolls a student.
+#  • get_course_info(course_id): Shows course, instructor, and enrolled students.
+#  • get_user_courses(user_id): Lists courses the user is enrolled in or teaches.
 
 import uuid
 
@@ -81,18 +81,18 @@ print(platform.get_user_courses(student_id))
 # Create a system to track freelance projects, time worked, and billing clients.
 #
 # Structure:
-# 	•	BillingSystem stores clients and projects.
-# 	•	Projects include logged time and rates.
+#  • BillingSystem stores clients and projects.
+#  • Projects include logged time and rates.
 #
 # Data:
-# 	•	clients: {client_id: {"name": str, "projects": list of project_ids}}
-# 	•	projects: {project_id: {"name": str, "client_id": ..., "hours": float, "rate": float}}
+#  • clients: {client_id: {"name": str, "projects": list of project_ids}}
+#  • projects: {project_id: {"name": str, "client_id": ..., "hours": float, "rate": float}}
 #
 # Methods to implement:
-# 	•	add_client(name)
-# 	•	create_project(client_id, project_name, rate)
-# 	•	log_hours(project_id, hours)
-# 	•	generate_invoice(client_id) → Returns a breakdown of projects and total bill.
+#  • add_client(name)
+#  • create_project(client_id, project_name, rate)
+#  • log_hours(project_id, hours)
+#  • generate_invoice(client_id) → Returns a breakdown of projects and total bill.
 
 class BillingSystem:
     def __init__(self):
@@ -152,17 +152,17 @@ print(billing.generate_invoice(client_id))
 # Build a system for managing multiplayer game lobbies, player joining/leaving, and matchmaking.
 #
 # Structure:
-# 	•	GameLobbySystem class.
-# 	•	Store:
-# 	•	players: {player_id: {"name": ..., "lobby": None or lobby_id}}
-# 	•	lobbies: {lobby_id: {"players": set(player_ids), "status": "waiting"/"in-game"}}
+#  • GameLobbySystem class.
+#  • Store:
+#  • players: {player_id: {"name": ..., "lobby": None or lobby_id}}
+#  • lobbies: {lobby_id: {"players": set(player_ids), "status": "waiting"/"in-game"}}
 #
 # Methods to implement:
-# 	•	add_player(name)
-# 	•	create_lobby()
-# 	•	join_lobby(player_id, lobby_id)
-# 	•	leave_lobby(player_id)
-# 	•	start_game(lobby_id) → Sets status to "in-game" if enough players (e.g., 2+)
+#  • add_player(name)
+#  • create_lobby()
+#  • join_lobby(player_id, lobby_id)
+#  • leave_lobby(player_id)
+#  • start_game(lobby_id) → Sets status to "in-game" if enough players (e.g., 2+)
 
 class GameLobbySystem:
     def __init__(self):

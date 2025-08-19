@@ -8,7 +8,7 @@ In a block we write:
 ### Example ###
 
 class MathUtils:
-    # Static method: performs an action unrelated to instance or class
+    # static method: performs an action unrelated to instance or class
     @staticmethod
     def add(x, y):
         return x + y
@@ -18,12 +18,12 @@ class MathUtils:
         return number % 2 == 0
 
 # Using static methods without creating an instance
-print(MathUtils.add(3, 5))       # Output: 8
-print(MathUtils.is_even(10))     # Output: True
+print(MathUtils.add(3, 5))       # output: 8
+print(MathUtils.is_even(10))     # output: True
 
-# You can also call them from an instance, though it's not recommended
+# We can also call them from an instance, though it's not recommended
 utils = MathUtils()
-print(utils.add(1, 2))           # Output: 3
+print(utils.add(1, 2))           # output: 3
 
 
 

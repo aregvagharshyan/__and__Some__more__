@@ -13,7 +13,7 @@ class MySQLConnector(DatabaseConnector):
         return print(self.host, self.post)
 
 print(DatabaseConnector.__abstractmethods__)
-# output will be frozenset({'connect'})
+# Output will be frozenset({'connect'})
 
 print(MySQLConnector.__abstractmethods__)
 # It's concrete, output will be frozenset({})
@@ -32,8 +32,7 @@ class Rectangle(Shape):
     def area(self):
         pass
 
-#c = Shape()
-# gives an error!
+# c = Shape(), gives an error!
 
 #
 

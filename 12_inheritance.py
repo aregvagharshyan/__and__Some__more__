@@ -7,10 +7,10 @@ Override - Redefine a method from the parent in the child.
 Extend - Add new methods/attributes in the child.
 super() - Calls the parent class method according to MRO.
 
-✅ 1. Single Inheritance - One subclass inherits from one base class.
-✅ 2. Multi-level Inheritance -A subclass of a subclass.
-✅ 2. Multiple Inheritance - A subclass inherits from multiple base class.
-✅ 4. Hierarchical Inheritance - Multiple subclasses from the same base class.
+1. Single Inheritance - One subclass inherits from one base class.
+2. Multi-level Inheritance -A subclass of a subclass.
+2. Multiple Inheritance - A subclass inherits from multiple base class.
+4. Hierarchical Inheritance - Multiple subclasses from the same base class.
 '''
 
 meta_tree = '''Meta-Level (How classes are built)
@@ -67,12 +67,12 @@ Instance-Level (When you create an object)
          │  duck = Duck()     │
          └────────┬───────────┘
                   ▼
-      ┌────────────────────────────┐
-      │ Instance of Duck           │
-      │ Inherits methods from MRO: │
+      ┌──────────────────────────────────────────┐
+      │ Instance of Duck                         │
+      │ Inherits methods from MRO:               │
       │  - __init__ from Duck or Flyer or object │
       │  - __str__ from Duck or object, etc.     │
-      └────────────────────────────┘
+      └──────────────────────────────────────────┘
 '''
 
 # Examples #

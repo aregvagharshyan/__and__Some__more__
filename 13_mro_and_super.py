@@ -2,10 +2,11 @@ inheritance_MRO_super = '''Inheritance - Reuse code from base classes, subclass 
 MRO - Determines method lookup order, Used especially in multiple inheritance.
 super() - Calls the next method in MRO, Safe and dynamic.
 '''
-MRO = '''✅Python determines which method or attribute to use using the MRO(Method Resolution Order) 
-— especially important in multiple inheritance.
-✅Use ClassName.__mro__ to inspect it.
-✅MRO goes left to right based on how classes are inherited, and uses the C3 linearization algorithm.
+MRO = '''Python determines which method or attribute to use using the MRO(Method Resolution Order) 
+— especially important in multiple inheritance:
+
+ • Use ClassName.__mro__ to inspect it.
+ • MRO goes left to right based on how classes are inherited, and uses the C3 linearization algorithm.
 '''
 tree = '''  object
               ↑

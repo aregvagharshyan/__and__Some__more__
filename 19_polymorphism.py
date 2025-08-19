@@ -1,6 +1,6 @@
 polymorphism = '''Same interface, different behavior.'''
 
-one = '''🔹Duck Typing(dynamic) Polymorphism'''
+one = ''' • Duck Typing(dynamic) Polymorphism'''
 
 class Dog:
     def speak(self):
@@ -20,11 +20,11 @@ animal_sound(dog)
 animal_sound(cat)
 
 # The function animal_sound(animal) expects an object that has a .speak() method.
-# •It doesn’t care what class the object belongs to (Dog, Cat, or even Fox).
-# •As long as the object has a .speak() method — it works.
+# It doesn’t care what class the object belongs to (Dog, Cat, or even Fox).
+# As long as the object has a .speak() method — it works.
 
 
-two = '''🔹Inheritance-based Polymorphism'''
+two = ''' • Inheritance-based Polymorphism'''
 
 class Animal:
     def speak(self):
@@ -44,9 +44,9 @@ def make_sound(animal: Animal):
 make_sound(Cat())  # "Meow"
 make_sound(Dog())  # "Woof"
 
-#➡️ Base class defines the interface; subclasses override the method.
+# Base class defines the interface; subclasses override the method.
 
-three = '''🔹 Decorator-Based Polymorphism'''
+three = ''' • Decorator-Based Polymorphism'''
 
 class PlainSender:
     def send(self, message):
@@ -78,14 +78,14 @@ class ReverseStringDecorator:
 plain_sender = Base64EncoderDecorator(ROT13EncoderDecorator(ReverseStringDecorator(PlainSender())))
 plain_sender.send('hello')
 
-#➡️ Each decorator wraps another format and adds its own behavior.
+# Each decorator wraps another format and adds its own behavior.
 
-four = '''🔹Strategy Pattern(custom)'''
+four = ''' • Strategy Pattern(custom)'''
 
 class Strategy:
     def execute(self, data):
         raise NotImplementedError("Subclasses must override execute(data)")
-              # This error is powerful, for this case...)
+              # this error is powerful, for this case...)
 class Upper(Strategy):
     def execute(self, data):
         return data.upper()
@@ -103,4 +103,4 @@ class Processor:
 print(Processor(Upper()).run("Hi"))
 print(Processor(Lower()).run("Hi"))
 
-#➡️ Swap logic at runtime (interface stays same)
+# Swap logic at runtime (interface stays same)

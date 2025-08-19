@@ -204,7 +204,8 @@ print(app.post("Alice", "Hello, world!"))
 print(app.follow("Bob", "Alice"))
 print(app.get_feed("Bob"))
 
-# Objective: Create an Inventory class that manages a store's stock.
+# Create an Inventory class that manages a store's stock.
+# Requirements:
 # The inventory should store items in a dictionary: {item_name: (price, stock)}.
 # Implement the following methods:
 # add_item(item_name, price, stock): Adds a new item or updates an existing item’s price and stock.
@@ -259,7 +260,8 @@ print(inventory.update_stock("Phone", 20))
 print(inventory.get_item_info("Laptop"))
 print(inventory.remove_item("Phone"))
 
-# Objective: Create a MovieRental class that allows users to rent and return movies.
+# Create a MovieRental class that allows users to rent and return movies.
+# Requirements:
 # Store the movies in a dictionary: {movie_title: (genre, copies_available)}.
 # Implement the following methods:
 # add_movie(movie_title, genre, copies): Adds a new movie or updates the number of copies.
@@ -307,7 +309,8 @@ print(movie_rental.rent_movie("Inception"))
 print(movie_rental.return_movie("Titanic"))
 print(movie_rental.get_movie_info("Inception"))
 
-# Objective: Create a Student class to manage students enrolled in multiple courses.
+# Create a Student class to manage students enrolled in multiple courses.
+# Requirements:
 # Store students in a dictionary: {student_id: {"name": student_name, "courses": {course_name: [grades]}}}.
 # Implement the following methods:
 # add_student(student_id, student_name): Adds a new student.
@@ -356,7 +359,8 @@ print(student_management.add_grade(1, "Math", 85))
 print(student_management.get_average_grade(1, "Math"))
 print(student_management.get_overall_average(1))
 
-# Objective: Create a Hotel class to manage room reservations.
+# Create a Hotel class to manage room reservations.
+# Requirements:
 # Store rooms in a dictionary: {room_number: {"status": "available" or "booked", "guest_name": None or guest_name}}.
 # Implement the following methods:
 # book_room(room_number, guest_name): Books a room for a guest.
@@ -385,7 +389,8 @@ print(hotel.get_room_status(101))
 print(hotel.cancel_booking(102))
 print(hotel.get_room_status(102))
 
-# Objective: Create a TaskManager class to handle tasks.
+# Create a TaskManager class to handle tasks.
+# Requirements:
 # Store tasks in a dictionary: {task_id: {"task_name": name, "status": "pending" or "completed"}}.
 # Implement the following methods:
 # add_task(task_name): Adds a new task with a unique ID.
@@ -425,7 +430,7 @@ task_manager.mark_completed(task_id1)
 print(task_manager.get_task_status(task_id1))
 print(task_manager.get_all_pending_tasks())
 
-# Objective: Implement a StoreInventory class to manage products in a store.
+# Implement a StoreInventory class to manage products in a store.
 # Methods to Implement:
 # add_product(name, price, stock) → Adds a new product or updates stock if the product exists.
 # update_price(name, new_price) → Updates the price of an existing product.
@@ -478,11 +483,8 @@ print(store.get_product_info("Laptop"))
 store.apply_discount(10)
 print(store.list_available_products())
 
-# Objective: Implement a BankAccount class to manage user accounts.
-# Data Structure
-# python
-# Copy
-# Edit
+# Implement a BankAccount class to manage user accounts.
+# Data Structure:
 # {account_number: {"holder": name, "balance": balance, "transactions": []}}
 # Methods to Implement
 # create_account(account_number, holder, balance) → Adds a new bank account.
@@ -524,11 +526,8 @@ bank.withdraw(101, 100)
 print(bank.get_balance(101))
 print(bank.get_transaction_history(101))
 
-# Objective: Manage users and interactions in a social media platform.
-# Data Structure
-# python
-# Copy
-# Edit
+# Manage users and interactions in a social media platform.
+# Data Structure:
 # {username: {"posts": [], "followers": set(), "following": set()}}
 # Methods to Implement
 # add_user(username) → Adds a new user.

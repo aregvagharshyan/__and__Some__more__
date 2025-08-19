@@ -1,4 +1,5 @@
 import uuid
+
 class Entity:
     def __init__(self, name):
         self.id = str(uuid.uuid4())

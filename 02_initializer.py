@@ -6,6 +6,7 @@ This parameter represents the instance of the class that is being created or mod
 Purpose of self:
 It allows you to access and modify the object's attributes and methods.
  • When a method is called on an object, self refers to the specific object that the method is being invoked on.
+ 
 Purpose of the initializer:
  • It initializes the object’s (self) attributes with default or provided values when the object is created.
  • It's typically used to set up or initialize the state of the object.'''
@@ -13,9 +14,9 @@ Purpose of the initializer:
 ### Example ###
 
 class Car:
-    def __init__(self, brand, model): # Initializer's calling
-        self.brand = brand  # Initializing self (object) attribute
-        self.model = model  # Initializing self (object) attribute
+    def __init__(self, brand, model): # initializer's calling
+        self.brand = brand  # initializing self (object) attribute
+        self.model = model  # initializing self (object) attribute
 
 # Creating an object (initializer is called automatically)
 my_car = Car("Toyota", "Corolla")

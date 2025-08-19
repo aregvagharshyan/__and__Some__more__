@@ -1,6 +1,6 @@
 ### Here is some examples with all attributes and methods ###
 
-# Task: Create a Vehicle Class
+# Create a Vehicle Class
 # Requirements:
 # Class Attributes:
 # total_vehicles (tracks the total number of Vehicle instances).
@@ -42,7 +42,7 @@ print(car_2.info())
 print(Vehicle.get_total_vehicles())
 print(Vehicle.is_vintage(1993))
 
-# Task: Create a BankAccount Class
+# Create a BankAccount Class
 # Requirements:
 # Class Attributes:
 # total_accounts (keeps track of the total number of accounts created).
@@ -94,7 +94,7 @@ person_1.withdraw(100)
 print(BankAccount.get_total_accounts())
 print(BankAccount.is_valid_amount(-1000))
 
-# Task: Create a Library Class
+# Create a Library Class
 # Requirements:
 # Class Attributes:
 # total_books (tracks the total number of books in the library).
@@ -154,7 +154,7 @@ print("Total books in all libraries:", Library.get_total_books())
 print("Is 'AI Basics' a valid title?", Library.is_valid_book_title("AI Basics"))
 print("Is '' a valid title?", Library.is_valid_book_title(""))
 
-# Task: Create a Restaurant Class
+# Create a Restaurant Class
 # Requirements:
 # Class Attributes:
 # total_restaurants (keeps track of the total number of restaurants created).
@@ -220,7 +220,6 @@ print("Total restaurants:", Restaurant.get_total_restaurants())
 print("Is 'Steak' a valid dish name?", Restaurant.is_valid_dish_name("Steak"))
 print("Is '' a valid dish name?", Restaurant.is_valid_dish_name(""))
 
-# Task: Library Management System
 # Create a Library class with the following functionalities:
 # A class attribute total_libraries to track the number of library instances.
 # An __init__ method that initializes the library's name and an empty dictionary books (where keys are book titles and values are availability as True/False).
@@ -288,7 +287,6 @@ print("Is 'Pride and Prejudice' a valid book name?", Library.is_valid_book_name(
 print("Is '' a valid book name?", Library.is_valid_book_name(""))
 print("Total libraries:", Library.get_total_libraries())
 
-# Task: Bank Account System
 # Create a BankAccount class with the following features:
 # A class attribute total_accounts to track the number of accounts.
 # An __init__ method that initializes the account holder's name, balance, and a unique account number.
@@ -339,7 +337,6 @@ print("Is 500 a valid amount?", BankAccount.is_valid_amount(500))
 print("Is -100 a valid amount?", BankAccount.is_valid_amount(-100))
 print("Total accounts:", BankAccount.get_total_accounts())
 
-# Task: Movie Theater Booking System
 # Create a MovieTheater class with these functionalities:
 # A class attribute total_theaters to track the number of theaters.
 # An __init__ method that initializes the theater name and an empty dictionary movies (where keys are movie titles and values are the number of available seats).

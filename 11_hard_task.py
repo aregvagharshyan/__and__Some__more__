@@ -12,25 +12,25 @@
 #     }
 # }
 # Methods to Implement.
-# 1️⃣ create_account(account_number, holder, balance)
+# 1 create_account(account_number, holder, balance)
 # Adds a new bank account.
-# 2️⃣ deposit(account_number, amount)
+# 2 deposit(account_number, amount)
 # Adds money and records transaction.
-# 3️⃣ withdraw(account_number, amount)
+# 3 withdraw(account_number, amount)
 # Withdraws if balance allows, else denies.
-# 4️⃣ get_balance(account_number)
+# 4 get_balance(account_number)
 # Returns balance.
-# 5️⃣ get_transaction_history(account_number, n=None)
+# 5 get_transaction_history(account_number, n=None)
 # Uses enumerate() to return the last n transactions (default: all).
-# 6️⃣ apply_interest()
+# 6 apply_interest()
 # Uses map() to apply 5% interest to all accounts with loans.
-# 7️⃣ rich_accounts(threshold)
+# 7 rich_accounts(threshold)
 # Uses filter() to return accounts with balance above threshold.
-# 8️⃣ merge_accounts(acc1, acc2, new_acc_num)
+# 8 merge_accounts(acc1, acc2, new_acc_num)
 # Uses zip() to merge two accounts into one, combining transactions and balance.
-# 9️⃣ account_summary()
+# 9 account_summary()
 # Uses dictionary comprehension to return {account_number: balance}.
-# 🔟 loan_details()
+# 10 loan_details()
 # Uses list comprehension to return [("Alice", 5000, 5.5%)] for all users with loans.
 
 class AdvancedBankSystem:

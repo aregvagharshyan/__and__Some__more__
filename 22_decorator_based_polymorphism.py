@@ -4,7 +4,7 @@ Add multiple, swappable behaviors to a base object
 → while using the same method interface (polymorphism)
 
 ────────────────────────────────────
-1️⃣ Create a Base Class
+1 Create a Base Class
 │
 ├── Define the main method(overridden), (e.g. process, predict, send, etc.)
 │   ├── This method contains the original logic
@@ -13,7 +13,7 @@ Add multiple, swappable behaviors to a base object
 │       → It becomes the first "wrapped" object in the chain
 │
 ────────────────────────────────────
-2️⃣ Create Decorator Classes
+2 Create Decorator Classes
 │
 ├── Each decorator must:
 │   ├── Accept a wrapped object via __init__(self, wrapped)
@@ -25,7 +25,7 @@ Add multiple, swappable behaviors to a base object
 │   ├── Call self.wrapped.method(...)
 │   └── (Optional) Add logic after the call
 ────────────────────────────────────
-3️⃣ Chain the Decorators
+3 Chain the Decorators
 │
 ├── Instantiate the base class first
 │
@@ -34,7 +34,7 @@ Add multiple, swappable behaviors to a base object
 │
 └── Final object becomes a layered stack of behaviors
 ────────────────────────────────────
-4️⃣ Call the Method Once on the Outermost Wrapper
+4 Call the Method Once on the Outermost Wrapper
 │
 ├── Single method call triggers all layers:
 │   ├── Top-level decorator logic runs
@@ -44,10 +44,10 @@ Add multiple, swappable behaviors to a base object
 │
 └── Each layer adds/modifies behavior but shares the same interface
 ────────────────────────────────────
-✅ Final Result:
-- You built flexible behavior layering without inheritance
-- You reused one method interface (`process()`)
-- You can reorder or remove wrappers anytime
+ • Final Result:
+- We built flexible behavior layering without inheritance
+- We reused one method interface (`process()`)
+- We can reorder or remove wrappers anytime
 - This is **pure polymorphism through composition**'''
 
 # Wrapper - An object/function that adds behavior to another, while preserving its interface
@@ -98,7 +98,7 @@ processor = CurrencyConverterDecorator(
 
 processor.payment_amount(100)
 
-# When you call:
+# When we call:
 # processor.payment_amount(100)
 # 1.CurrencyConverterDecorator.payment_amount(100) is called
 # 2.It converts amount, then calls

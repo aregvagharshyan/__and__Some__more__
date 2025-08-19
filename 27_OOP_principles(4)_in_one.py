@@ -1,11 +1,11 @@
 from abc import ABC, abstractmethod
 
-# ✅ Example of concreate class
+# Example of concreate class
 
-class PaymentProcessor(ABC): # ✅Abstraction✅
+class PaymentProcessor(ABC): # Abstraction
     @abstractmethod
     def __init__(self, amount):
-        self._amount = amount # ✅Encapsulation✅
+        self._amount = amount # Encapsulation
     @property
     @abstractmethod
     def amount(self):
@@ -15,7 +15,7 @@ class PaymentProcessor(ABC): # ✅Abstraction✅
     def amount(self):
         pass
 
-class StripePayment(PaymentProcessor): # ✅Inheritance✅
+class StripePayment(PaymentProcessor): # Inheritance
     def __init__(self, amount):
         self._amount = amount
 
@@ -31,7 +31,7 @@ class StripePayment(PaymentProcessor): # ✅Inheritance✅
         else:
             raise ValueError('Can\'t be a negative value!')
 
-class PayPalPayment(PaymentProcessor): # ✅Inheritance✅
+class PayPalPayment(PaymentProcessor): # Inheritance
     def __init__(self, amount):
         self._amount = amount
 
@@ -50,22 +50,22 @@ class PayPalPayment(PaymentProcessor): # ✅Inheritance✅
 stripe = StripePayment(500)
 paypal = PayPalPayment(400)
 
-def show_amount(processor: PaymentProcessor): # ✅Polymorphism✅
+def show_amount(processor: PaymentProcessor): # Polymorphism
     print(processor.amount)
 
 show_amount(stripe)
 show_amount(paypal)
 
-print(StripePayment.__abstractmethods__) # empty, frozenset() ✅
+print(StripePayment.__abstractmethods__) # empty, frozenset()
 
 about_1 = '''
-✅ So what’s happening in your case?
-	•	Your subclass StripePayment:
-	•	Implements __init__ ✅
-	•	Implements amount getter ✅
-	•	Implements amount setter ✅
-	•	Therefore: StripePayment.__abstractmethods__ → frozenset() ✅
-(means: “No abstract methods left — it’s fully concrete”)
+So what’s happening in our case?
+ • Our subclass StripePayment:
+ • Implements __init__ 
+ • Implements amount getter 
+ • Implements amount setter 
+ • Therefore: StripePayment.__abstractmethods__ → frozenset()
+   (means: “No abstract methods left — it’s fully concrete”)
 '''
 
 

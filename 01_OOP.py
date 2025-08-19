@@ -22,22 +22,22 @@ __self_attribute = 'Are unique to each object(instance)!'
 
 class Greeting: # with class level attribute!
 
-    message = "Hello, World!"  # Class attribute
+    message = "Hello, World!"  # class attribute
 
-    def say_hello():  # Method like a this
-        return Greeting.message   # Accessing class attribute
+    def say_hello():  # method like a this
+        return Greeting.message   # accessing class attribute
 
 # Calling the method directly
-print(Greeting.say_hello())  # Output: Hello, World!
+print(Greeting.say_hello())  # output: Hello, World!
 
 class Greeting2: # with instance(self) level attribute!
 
     def __init__(self, message):
-        self.message = message # Self attribute
+        self.message = message # self attribute
 
-    def say_hello(self): # Method like this too
+    def say_hello(self): # method like this too
         message = self.message
-        return message # Accessing self attribute
+        return message # accessing self attribute
 
 # Creating object, calling on in it directly
 greeting = Greeting2("Hello, World!")
